@@ -76,7 +76,7 @@ function ShowGridMoreInfoMod:ShowGridInfo()
 	if CS.Wnd_GameMain.Instance.openFengshui then
 		local EArray = Map:GetElement(nCurMouseKey)
 		local EPArray = Map:GetElementProportion(nCurMouseKey)
-		CS.Wnd_GameMain.Instance.UIInfo.m_n32.text = string.format("พลังปราณ:%.2f\nรวบรวมพลังปราณ:%s\n[color=#FFEB68]เหล็ก  %05.2f  %02.0f%%[/color]\n[color=#78C84E]ไม้  %05.2f  %02.0f%%[/color]\n[color=#81C1F5]น้ำ  %05.2f  %02.0f%%[/color]\n[color=#DA494E]ไฟ  %05.2f  %02.0f%%[/color]\n[color=#986B39]ดิน  %05.2f  %02.0f%%[/color]",
+		CS.Wnd_GameMain.Instance.UIInfo.m_n32.text = string.format("Qi:%.2f\nQi Gathering:%s\n[color=#FFEB68]Metal  %05.2f  %02.0f%%[/color]\n[color=#78C84E]Wood  %05.2f  %02.0f%%[/color]\n[color=#81C1F5]Water  %05.2f  %02.0f%%[/color]\n[color=#DA494E]Fire  %05.2f  %02.0f%%[/color]\n[color=#986B39]Earth  %05.2f  %02.0f%%[/color]",
 				fLing,
 				strLingAddion,
 				EArray[1], EPArray[1] * 100,
@@ -119,7 +119,7 @@ function ShowGridMoreInfoMod:ShowGridInfo()
 	end
  
 	-- {0}{8}{6}\n{1}\n{2}\n{4}\n{3}{5}({7:f1}℃)
-	CS.Wnd_GameMain.Instance.UIInfo.m_n32.text = string.format("พลังปราณ:%.2f\nรวบรวมพลังปราณ:%s\n%s%s%s(%d, %d)\n%s[color=%s](%.2f)[/color]\n%s(%.2f)\n%s(%.2f)\n%s%s(%.1f℃)",
+	CS.Wnd_GameMain.Instance.UIInfo.m_n32.text = string.format("Qi:%.2f\nQi Gathering:%s\n%s%s%s(%d, %d)\n%s[color=%s](%.2f)[/color]\n%s(%.2f)\n%s(%.2f)\n%s%s(%.1f℃)",
 			fLing,
 			strLingAddion,
 			strMsg0, strMsg8, strMsg6, nX, nY,
